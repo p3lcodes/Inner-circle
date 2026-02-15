@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Circle | Global Hedge Fund</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #000000; scroll-behavior: smooth; }
+        
+        .hero-section {
+            position: relative;
+            height: 85vh;
+            /* This links to your bg2.png photo */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('bg.png') no-repeat; 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 0 10%;
+        }
+
+        /* Expertise Cards - Clean White Style */
+        .expertise-card {
+            background: #ffffff;
+            border: 1px solid #eaeaea;
+            padding: 3rem;
+            transition: border 0.3s ease;
+        }
+        .expertise-card:hover {
+            border-color: #000000;
+        }
+
+        /* Input styling for the Chat/Email box */
+        .contact-input {
+            width: 100%;
+            padding: 1rem;
+            border-bottom: 2px solid #eeeeee;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .contact-input:focus {
+            border-color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="flex justify-between items-center px-6 md:px-12 py-6 bg-white sticky top-0 z-50">
+        <div class="flex items-center space-x-4">
+            <img src="logo2.png" alt="Logo" class="w-12 h-12">
+            <span class="text-xl font-black uppercase tracking-tighter"></span>
+        </div>
+        <div class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-widest">
+            <a href="#performance">Performance</a>
+            <a href="#about">About</a>
+            <a href="#expertise">Market Expertise</a>
+            <a href="#contact" class="bg-black text-white px-6 py-2">Contact Us</a>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="max-w-4xl">
+            <h1 class="text-6xl md:text-8xl font-black uppercase leading-[0.9] mb-6">
+                Mastering the <br> <span class="text-gray-400">Financial Core.</span>
+            </h1>
+            <p class="text-xl text-gray-200 font-light max-w-lg mb-8">
+                Hedge fund excellence focused on Forex, Stocks, and Money Markets.
+            </p>
+        </div>
+    </header>
+<section id="performance" class="py-20 border-b border-gray-100 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="mb-12 text-center">
+            <h2 class="text-xs font-bold uppercase tracking-[0.5em] text-gray-400 mb-4">Portfolio Analytics</h2>
+            <h3 class="text-4xl font-black uppercase tracking-tighter">Our Performance</h3>
+        </div>
+
+        <div class="max-w-5xl mx-auto overflow-hidden rounded-xl border border-gray-100 bg-[#fafafa] shadow-sm">
+            <div class="px-8 py-6 border-b border-gray-100 flex justify-between items-center bg-white">
+                <h4 class="text-xs font-black uppercase tracking-widest text-gray-900">2026 Monthly Yield Breakdown</h4>
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Consolidated Audit</span>
+            </div>
+            <table class="w-full text-left">
+                <thead class="bg-gray-50 text-[10px] uppercase tracking-widest text-gray-400">
+                    <tr>
+                        <th class="px-8 py-4 font-bold">Trading Month</th>
+                        <th class="px-8 py-4 font-bold text-center">Forex</th>
+                        <th class="px-8 py-4 font-bold text-center">Stocks</th>
+                        <th class="px-8 py-4 font-bold text-center">Money Market</th>
+                        <th class="px-8 py-4 font-bold text-right">Total Net</th>
+                    </tr>
+                </thead>
+                <tbody class="text-sm font-medium">
+                    <tr class="border-t border-gray-100 bg-white hover:bg-gray-50 transition">
+                        <td class="px-8 py-5 text-gray-900 uppercase font-bold text-xs">January 2026</td>
+                        <td class="px-8 py-5 text-center text-emerald-600 font-bold">+2.1%</td>
+                        <td class="px-8 py-5 text-center text-emerald-600 font-bold">+1.5%</td>
+                        <td class="px-8 py-5 text-center text-emerald-600 font-bold">+0.6%</td>
+                        <td class="px-8 py-5 text-right font-black text-gray-900">+4.20%</td>
+                    </tr>
+                    <tr class="border-t border-gray-100 bg-white hover:bg-gray-50 transition">
+                        <td class="px-8 py-5 text-gray-900 uppercase font-bold text-xs">February 2026 (MTD)</td>
+                        <td class="px-8 py-5 text-center text-emerald-600 font-bold">+1.9%</td>
+                        <td class="px-8 py-5 text-center text-emerald-600 font-bold">+1.2%</td>
+                        <td class="px-8 py-5 text-center text-emerald-600 font-bold">+0.7%</td>
+                        <td class="px-8 py-5 text-right font-black text-gray-900">+3.80%</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="px-8 py-6 bg-gray-50 border-t border-gray-100 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="text-[9px] text-gray-400 uppercase font-bold tracking-widest">
+                    * MTD: Month to Date results are subject to final settlement.
+                </div>
+                <div class="text-[9px] text-gray-400 uppercase font-bold tracking-widest md:text-right">
+                    Verified by Inner Circle Risk Management Team.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="about" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+            <h2 class="text-4xl font-black uppercase tracking-tighter">About <br>Inner Circle</h2>
+            <p class="text-lg text-gray-600 leading-relaxed italic border-l-4 border-black pl-8">
+               Inner Circle is an elite investment collective where institutional discipline meets global opportunity. We don't just participate in the markets; we engineer growth by navigating the high-velocity world of Forex, the structural strength of Equities, and the strategic safety of Money Markets.<br>Investment Excellence. Absolute Transparency. Global Reach.
+        </div>
+    </section>
+
+    <section id="expertise" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-center text-3xl md:text-4xl font-black uppercase tracking-[0.2em] mb-16">
+            Our Expertise
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="border border-gray-100 p-12 bg-white hover:border-black transition-colors duration-300">
+                <h3 class="text-xl font-black uppercase mb-6 tracking-widest">Forex</h3>
+                <p class="text-gray-500 leading-relaxed text-sm">
+                    Global currency strategies focusing on major pairs and high-liquidity market movements.
+                </p>
+            </div>
+
+            <div class="border border-gray-100 p-12 bg-white hover:border-black transition-colors duration-300">
+                <h3 class="text-xl font-black uppercase mb-6 tracking-widest">Stocks</h3>
+                <p class="text-gray-500 leading-relaxed text-sm">
+                    Strategic equity acquisition driven by institutional data, technical timing, and long-term structural growth.
+                </p>
+            </div>
+
+            <div class="border-2 border-black p-12 bg-white shadow-lg">
+                <h3 class="text-xl font-black uppercase mb-6 tracking-widest">Money Markets</h3>
+                <p class="text-gray-500 leading-relaxed text-sm">
+                    Advanced capital preservation using short-term instruments to ensure low-risk stability and consistent yield.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    </section>
+
+<section id="contact" class="py-24 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-xs font-bold uppercase tracking-[0.5em] text-gray-400 mb-4">Inquiry</h2>
+            <h3 class="text-4xl font-black uppercase tracking-tighter">Partner With Us</h3>
+            <p class="mt-4 text-gray-500">Direct your proposal to the Inner Circle desk.</p>
+        </div>
+
+        <div class="bg-white border border-gray-100 p-12 text-center shadow-sm">
+            <p class="text-xs font-bold tracking-[0.2em] text-gray-300 mb-10 uppercase">Official Channels</p>
+            
+            <div class="space-y-10">
+                <div>
+                    <span class="block text-[10px] text-gray-400 uppercase tracking-widest mb-3">Email Us On</span>
+                    <a href="mailto:innercirclehedgefund@gmail.com" 
+                       class="text-lg md:text-xl font-medium text-black hover:text-gray-500 transition border-b border-gray-200 pb-1">
+                        Innercirclehedgefund@gmail.com
+                    </a>
+                </div>
+
+                <div class="pt-2">
+                    <span class="block text-[10px] text-gray-400 uppercase tracking-widest mb-6">Contact Us </span>
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-10">
+                        
+                        <a href="tel:0111270277" class="flex items-center gap-3 group">
+                            <i class="fa-solid fa-phone text-xs text-gray-300 group-hover:text-black transition"></i>
+                            <span class="text-lg md:text-xl font-black text-black tracking-tight">
+                                0111 270 277
+                            </span>
+                        </a>
+
+                        <a href="tel:0799545130" class="flex items-center gap-3 group">
+                            <i class="fa-solid fa-phone text-xs text-gray-300 group-hover:text-black transition"></i>
+                            <span class="text-lg md:text-xl font-black text-black tracking-tight">
+                                0114 339 025
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="bg-white py-6 border-t border-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="flex flex-row justify-between items-center mb-4">
+            
+            <div class="order-1">
+                <h2 class="text-lg font-black titlecase tracking-tighter">Inner Circle</h2>
+            </div>
+
+            <div class="flex space-x-6 order-2">
+                <a href="https://www.instagram.com/j_remy_jones/" target="_blank" class="text-[#E1306C] hover:opacity-70 transition text-lg">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://x.com/home" target="_blank" class="text-black hover:opacity-70 transition text-lg">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.tiktok.com/@jose.p3l?lang=en" target="_blank" class="text-black hover:text-[#ff0050] transition text-lg">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="text-center border-t border-gray-50 pt-4">
+            <div class="text-[9px] text-gray-400 font-bold uppercase tracking-[0.2em] leading-none">
+                <p>Nairobi Kenya</p>
+                <p class="mt-1 opacity-80">&copy; 2026 Inner Circle. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
