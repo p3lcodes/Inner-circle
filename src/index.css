@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --color-accent-50: #ecfdf5;
+  --color-accent-100: #d1fae5;
+  --color-accent-500: #10b981;
+  --color-accent-600: #059669;
+  --color-accent-700: #047857;
+  --color-accent-800: #065f46;
+  --color-accent-900: #064e3b;
+
+  --color-background: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+}
+
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-hover: #f1f5f9;
+  --border: #e2e8f0;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+}
+
+.dark {
+  --bg: #0a0a0a;
+  --surface: #171717;
+  --surface-hover: #262626;
+  --border: #262626;
+  --text-main: #f5f5f5;
+  --text-muted: #a3a3a3;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--color-background)] text-[var(--color-text-main)] font-sans antialiased;
+  }
+}
+
+/* Utilities */
+.glass-panel {
+  @apply bg-[var(--color-surface)]/80 backdrop-blur-md border border-[var(--color-border)] shadow-xl;
+}
